@@ -1,55 +1,112 @@
-# Reinvest 
+<h1 align ="center">Reinvest.life</h1> 
 
+<p align ="center">
+  <img alt="Lines of code" src="https://img.shields.io/tokei/lines/github/hfbgk321/reinvest_fullstack?color=pink">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/hfbgk321/reinvest_fullstack?color=orange">
+  <img src="https://img.shields.io/website?down_message=Offline&up_message=Online&url=https%3A%2F%2Freinvest.life%2F">
+  <img src = "https://img.shields.io/github/languages/top/hfbgk321/reinvest_fullstack?style=flat-square">
+  <img src = "https://img.shields.io/github/languages/count/hfbgk321/reinvest_fullstack?color=green">
+  <img src = "https://img.shields.io/badge/dependencies-up to date-brightgreen"
+</p>
+  
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/64310147/103424902-fac25600-4b7c-11eb-906c-e27375a5bad1.png">
+  <img src="https://user-images.githubusercontent.com/40508134/103444641-3c640700-4c38-11eb-9d08-7a8f74c5f6eb.png" width = "700" height = "350">
 </p>
 
+ <h2 align="center"><a  href="https://reinvest.life/">Try out the web app</a></h2>
+ 
  
 
-Have you wondered if a house is a good buy for your real estate portfolio? Our free software will give any user important details to help make the decision a lot easier for you. Important attributes that are considered are Cash on Cash return, ROI, Net Operating Income, Fixed Monthly Morgage, Monthly Cash Flow, and much more valuable details to come to a decision. The software also allows you to save your previous houses, allowing you to come back and check them whenever you want. 
+## Description
+
+Have you wondered if a house is a good buy for your real estate portfolio? REInvest's free software will give any user important details to help make the decision a lot easier for you. Important attributes crucial to your investment decisions are considered such as Cash on Cash return, ROI, Net Operating Income, Fixed Monthly Morgage, Monthly Cash Flow, and many more valuable details for you to evaluate the investment upon. This software also allows you to save your previous houses, allowing you to come back and check them whenever you want. 
+
+<p align = "center">
+  <img src = "https://user-images.githubusercontent.com/40508134/103446974-67a81f80-4c53-11eb-961f-1c8cb90b079a.gif" width = "700" height = "350" >
+</p>
+
+
+
+
+
+## Navigating the UI
+
+- **Homepage** Upon logging in, you will be directed to your properties page, which will allow you to view, edit, or create analysis for a new property.
+- **Add New Property** Clicking the Add New Property button will redirect to a form page, prompting you to fill in some information about your property. Our software will then use that data to calculate different factors of this property using industry formulas.
+    <p align ="center"><img src = "https://user-images.githubusercontent.com/40508134/103446823-dedcb400-4c51-11eb-9de6-37d1054806ff.gif" width = "700" height = "350"></p>
+- **Updating Property** There are two ways that you can edit information about a property. You can either click the edit button in the property page or click the update button in the analysis page.
+    <table>
+      <tr>
+        <td><img src = "https://user-images.githubusercontent.com/40508134/103447061-56134780-4c54-11eb-96c9-6c2197ae615f.gif"></td>
+        <td><img src = "https://user-images.githubusercontent.com/40508134/103447092-ad191c80-4c54-11eb-9201-29a31aaf43c2.gif"></td>
+       </tr> 
+    </table>
+      
+ - **Viewing existing properties** All your existing properties will populate in your properties page. We incorporated a search bar for you to search properties based on address. To view data about an existing property, just click the view button, which will direct you to the analysis page of that property.
+      <p align = "center">
+        <img src = "https://user-images.githubusercontent.com/40508134/103447126-fe291080-4c54-11eb-870e-0acc3eb51d65.gif" width = "700" height = "350">
+      </p>
+  
+  
+  
 
 ## Getting Started
 
-How to Run this on your local server: clone the project, and npm install the dependencies, npm run
+How to run this on your local server: 
+1. Clone the project, and run the command 'npm install' in the terminal to install dependencies.
+2. To launch the backend local server, run the commands 'cd <Your backend folder>' and 'npm run dev' 
+3. To launch the frontend local server, run the commands 'cd <Your frontend folder>' and 'npm start'
+Both the backend and frontend server need to be started and running for the software to be operable.
+
+
 
 ### Prerequisites
 
 What things you need to install the software and how to install them
 
 ```
-You need node and vscode to install dependencies
+You will need to install VSCode, as well as Node.js
 ```
+
+
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
 ```
-git clone , open in ide, There's a backend file, which you can run on port 4000 by npm install and to start use npm run dev.
-
-There's also a front end file that you can run on port 3000 by npm install and to start use npm start.
-
-Look at .env.example for connecting to MongoDB and Token Secret
+$ git clone https://github.com/hfbgk321/reinvest_fullstack.git
+$ cd .\reinvest_fullstack\
+$ <Go to .env.example to connect to your own MongoDB database and provide the Token Secret>
+$ cd .\reinvest_backend_master\
+$ npm install
+$ cd ..
+$ cd .\reinvest_frontend\
+$ npm install
+$ cd .. 
+$ cd .\reinvest_backend_master\
+$ npm run dev
+$ <Open up a new Terminal>
+$ cd .\reinvest_fullstack\
+$ cd .\reinvest_frontend\
+$ npm start
 ```
 
+The website should launch automatically in a new window.
 
 
-End with an example of getting some data out of the system or using it for a little demo
 
 
 ## Deployment
 
-We deployed the backend on heroku and the frontend onn Netlify
+REInvest was deployed on Heroku for the backend server and the frontend server on Netlify
 
-If you want to check it out http://reinvest.life/
+Check it out: http://reinvest.life/
+
+
 
 
 ## Built With
 
-
-Technologies Used: ReactJS, Node, Express, mongoose, MongoDB, Git, Heroku, Netlify, JS, HTML, CSS, JSX, Bootstrap, Axios, Babel, JSON web token, JS-Cookie, Cors, Nodemon, Charts.js, API's, DOM
+Technologies Used: React.js, Node.js, Express.js, Mongoose, MongoDB, Git, Heroku, Netlify, JS, HTML, CSS, JSX, Bootstrap, Axios, Babel, JSON Web Token, JS-Cookie, Cors, Nodemon, Charts.js, React Router
 
 
 ## Contributing
@@ -58,40 +115,13 @@ Technologies Used: ReactJS, Node, Express, mongoose, MongoDB, Git, Heroku, Netli
 Github:
 * Nikhil: https://github.com/nbodduluri
 * Jacky: https://github.com/hfbgk321
-* Horace:https://www.linkedin.com/in/horaceliu/
+* Horace:https://github.com/horaceliuHL
 * Thomas:https://github.com/thomasyeung687
-
-
-
-
- 
-
-## Authors
 
 Linkedin: 
 * Jacky: https://www.linkedin.com/in/jacky-chen-sbu/
 * Horace: https://www.linkedin.com/in/horaceliu/
 * Thomas: https://www.linkedin.com/in/thomas-yeung-517507200/
-* Nikhil: nbodduluri
+* Nikhil: https://www.linkedin.com/in/nikhil-bodduluri-657a69204/
 
-
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-Problems we Faced: handling https request while using authorization, using multer and blobs to process and send in receive images to server
-
-How we solved the problems: We solved the routing problems by first debugging and testing the routes on Postma, once confirmed we went and debugged the front end to also work
-
-
-Things we learned: MERN, image processing, cookies, autho, backend, encrypt and decrypt, responsive design 
-
-## Overview
-
-
-![unknown-1](https://user-images.githubusercontent.com/64310147/103423729-3a397400-4b76-11eb-96d5-b9b3f86df3e3.png)
-![unknown-2](https://user-images.githubusercontent.com/64310147/103423764-67862200-4b76-11eb-84cd-81a8823c678f.png)
 
