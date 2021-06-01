@@ -199,7 +199,7 @@ const buttonGroup = (props) => {
         props.data.waterAndSewer+ props.data.hoaFees);  //unsure about the calculation of vacancy
       return result;
     }
-    return (
+    return ( 
       <div class="center">
         <Row>
           <Col sm={12}>
